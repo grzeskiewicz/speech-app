@@ -262,9 +262,13 @@ class Board extends React.Component {
         fetch(request(API_URL + "getnotesdate", 'POST', date))
             .then(res => res.json())
             .then(result => {
-                console.log(result);
+                //console.log(result);
                 this.setState({ importedDbNotes: result });
             });
+    }
+
+    removeNote(notex){
+        console.log(notex);
     }
 
     render() {
@@ -281,8 +285,10 @@ class Board extends React.Component {
             );
         });
         const importedDbNotes = this.state.importedDbNotes.map((note, index) => {
+            const noteId=note._id;
+console.log(noteId);
             return (
-                <li key={index}>{note.content}</li>
+                <li key={index}><span className="note"><div className="content">{note.content}</div><div className="remove-note" onClick={(n) => this.removeNote(n)}>[X]</div></span></li>
             );
         });
 

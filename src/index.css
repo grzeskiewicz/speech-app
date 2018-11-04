@@ -5,9 +5,13 @@
     flex-flow:row nowrap;
 }
 
-#month-control{
+
+
+
+.note{
     display:flex;
-    justify-content: center;
+    flex-flow:row nowrap;
+    justify-content: space-between;
 }
 
 
@@ -21,8 +25,11 @@
 
 
 
-
 /* CALENDAR CSS */
+#month-control{
+    display:flex;
+    justify-content: center;
+}
 
 #week {
     margin: 1rem;
