@@ -1,0 +1,98 @@
+#day-notes{
+    margin-top:2rem;
+    margin-left:4rem;
+    display:flex;
+    flex-flow:row nowrap;
+}
+
+#month-control{
+    display:flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CALENDAR CSS */
+
+#week {
+    margin: 1rem;
+}
+
+
+#calendar {
+    text-align: center;
+    line-height: 2;
+}
+
+#calendar p {
+    font-weight: 300;
+}
+
+.today {
+    background-color: #0078D7;
+}
+
+table {
+    vertical-align: top;
+    border-collapse: collapse;
+}
+
+tbody tr:hover {
+    background-color: #fff;
+}
+
+td {
+    text-align: center;
+
+    padding: 1rem;
+
+
+}
+
+thead td {
+    color: #999;
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+tbody td {
+    font-size: .875rem;
+    
+}
+
+tbody td:hover {
+    border:2px solid #333;
+    cursor: pointer;
+}
+
+td.before,
+td.after {
+    color: #999;
+}
+
+#next:hover,
+#previous:hover {
+    background-color: orange;
+}
+
+.not-selectable{
+    background-color:lightgrey;
+}
+
+.not-selectable:hover {
+    cursor: not-allowed;
+}
+
+.date-clicked {
+    background-color: orange;
+}
