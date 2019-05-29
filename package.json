@@ -5,11 +5,11 @@
   "dependencies": {
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
-    "react-scripts": "2.0.5",
-    "browser-sync": "^2.26.3"
+    "react-scripts": "^3.0.1"
   },
-    "devDependencies": {
-    "browser-sync": "^2.26.3"
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "typescript": "^3.5.1"
   },
   "scripts": {
     "start": "react-scripts start",
